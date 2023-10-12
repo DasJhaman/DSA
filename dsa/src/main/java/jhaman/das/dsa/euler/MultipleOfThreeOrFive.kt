@@ -16,19 +16,19 @@ fun main() {
 
 fun multipleOfThreeOrFive(sumRange: Int):Int {
     var start = 0
-    var sum = 0;
+    var sum = 0
 
     while (start < sumRange) {
-        if (checkIsMultipleOfThreeOrFive(start)){
+        if (checkNumIsMultipleOfThreeOrFive(start)){
             sum += start
         }
         start++
     }
 
-    return sum;
+    return sum
 }
 
 
-fun checkIsMultipleOfThreeOrFive(num: Int): Boolean{
-    return num % 3 ==0 || num %5 == 0
+fun checkNumIsMultipleOfThreeOrFive(num: Int): Boolean{
+    return num % 3 ==0 || num % 5 == 0
 }
