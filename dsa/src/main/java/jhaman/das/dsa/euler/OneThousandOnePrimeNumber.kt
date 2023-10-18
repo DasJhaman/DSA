@@ -10,11 +10,8 @@ What is the 1001st prime number?
  */
 fun main(){
  println(findNthPrime(2))
-//    oneThousandOnePrimeNumber()
-// println(isPrime(13))
 }
 fun oneThousandOnePrimeNumber(){
-
     var count = 0
     var primerM = 0
     var starNumber = 2
