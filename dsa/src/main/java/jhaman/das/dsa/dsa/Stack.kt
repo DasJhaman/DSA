@@ -1,16 +1,26 @@
 package jhaman.das.dsa.dsa
 
-class Stack {
+class Stack<T> {
 
-    private var next: Node? = null
+    val stack = mutableListOf<T>()
 
-    fun push(item: String) {
-        var oldFirst: Node? = next
-
+    fun push(value: T) {
+        stack.add(value)
     }
 
-    data class Node(val item: String, val next: Node)
+    fun pop(): T = stack.removeLast()
 
+}
+
+
+fun main(){
+    val stack = Stack<Int>()
+    stack.push(1)
+    stack.push(2)
+    stack.push(4)
+    println(stack.pop())
+    println(stack.pop())
+    println(stack.pop())
 }
 
 
