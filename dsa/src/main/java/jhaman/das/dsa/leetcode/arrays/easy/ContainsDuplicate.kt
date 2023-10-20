@@ -16,3 +16,22 @@ fun containsDuplicate(nums: IntArray): Boolean {
     }
     return false
 }
+
+fun containsDuplicateTwo(nums: IntArray): Boolean {
+    nums.sort()
+
+    if (nums.isEmpty()) return false
+    var left = 0
+    var next = 1
+
+    while (left < nums.lastIndex) {
+        if (nums[left] == nums[next]) return true
+
+        left++
+        next++
+
+    }
+
+    return false
+
+}
