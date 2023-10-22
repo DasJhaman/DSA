@@ -7,13 +7,20 @@ package jhaman.das.dsa.leetcode.arrays
  make two passes, first in-order, second in-reverse, to compute products
 */
 
+
+/*
+Approach:
+
+Multiply each number with pre fix and multiply each number by post fix and solution is yours...
+ */
+
 fun main() {
     println(productExceptSelf(intArrayOf(1, 2, 3, 4)).toList())
 }
 
 fun productExceptSelf(nums: IntArray): IntArray {
     val output = IntArray(nums.size) { 1 }
-    val end: Int = nums.size - 1
+    val end: Int = nums.lastIndex
     var left = 1
     var right = 1
 
@@ -25,4 +32,8 @@ fun productExceptSelf(nums: IntArray): IntArray {
     }
 
     return output
+}
+
+fun solve(num:IntArray){
+    val ouput = IntArray(num.size){ 1 }
 }
