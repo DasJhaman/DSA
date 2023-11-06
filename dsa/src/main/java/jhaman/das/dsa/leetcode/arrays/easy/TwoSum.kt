@@ -1,4 +1,4 @@
-package jhaman.das.dsa.leetcode.arrays
+package jhaman.das.dsa.leetcode.arrays.easy
 
 
 fun main() {
