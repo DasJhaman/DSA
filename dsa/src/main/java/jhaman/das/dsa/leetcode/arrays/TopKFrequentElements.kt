@@ -8,6 +8,7 @@ fun main(){
 fun topKFrequent(nums: IntArray, k: Int): IntArray {
     val map = nums.toList().groupingBy { it }.eachCount()
     val freq = Array<MutableList<Int>>(nums.size) { mutableListOf() } // [freq : elements]
+    println(map.toList())
     map.forEach { (k, v) ->
         freq[v].add(k)
     }
