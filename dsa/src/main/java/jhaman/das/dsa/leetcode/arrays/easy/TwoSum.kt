@@ -7,12 +7,12 @@ fun main() {
 }
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
-    val set: HashMap<Int,Int> = HashMap()
+    val set: HashMap<Int, Int> = HashMap()
 
     for (i in nums.indices) {
         val num = nums[i]
-        val prevValue =  target - num
-        if (set.containsKey(prevValue)){
+        val prevValue = target - num
+        if (set.containsKey(prevValue)) {
             return intArrayOf(i, set[prevValue]!!)
         }
 
