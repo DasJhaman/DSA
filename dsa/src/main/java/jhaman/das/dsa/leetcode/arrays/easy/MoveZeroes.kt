@@ -10,7 +10,7 @@ fun moveZeroes(nums: IntArray) {
     nums.forEachIndexed { index, i ->
         if (i != 0) {
             val temp = nums[cur]
-            nums[cur++] = nums[index]
+            nums[cur++] = i
             nums[index] = temp
         }
     }
