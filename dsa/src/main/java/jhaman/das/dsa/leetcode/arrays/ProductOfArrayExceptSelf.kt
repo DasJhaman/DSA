@@ -33,7 +33,3 @@ fun productExceptSelf(nums: IntArray): IntArray {
 
     return output
 }
-
-fun solve(num:IntArray){
-    val ouput = IntArray(num.size){ 1 }
-}
