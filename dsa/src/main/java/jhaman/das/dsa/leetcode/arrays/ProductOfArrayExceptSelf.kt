@@ -16,6 +16,7 @@ Multiply each number with pre fix and multiply each number by post fix and solut
 
 fun main() {
     println(productExceptSelf(intArrayOf(1, 2, 3, 4)).toList())
+    println(productExceptSelfBrute(intArrayOf(1, 2, 3, 4)).toList())
 }
 
 fun productExceptSelf(nums: IntArray): IntArray {
@@ -29,6 +30,21 @@ fun productExceptSelf(nums: IntArray): IntArray {
         output[end - index] *= right
         left *= nums[index]
         right *= nums[end - index]
+    }
+
+    return output
+}
+
+fun productExceptSelfBrute(nums: IntArray): IntArray {
+    val output = IntArray(nums.size) { 1 }
+    for (i in 0..nums.lastIndex) {
+         var product = 1
+        for (j in 0..nums.lastIndex) {
+            if (j != i)
+             product *= nums[j]
+        }
+
+        output[i] = product
     }
 
     return output
