@@ -2,7 +2,7 @@ package jhaman.das.dsa.leetcode.math
 
 
 fun main() {
-    println(reverse(1534236469))
+    println(reverse(123))
 }
 
 fun reverse(x: Int): Int {
@@ -16,6 +16,7 @@ fun reverse(x: Int): Int {
         if (result < Int.MIN_VALUE / 10 || (result == Int.MIN_VALUE / 10 && lastDigit < -8)) return 0
 
         result = (result * 10) + lastDigit
+        println(result)
 
     }
 
